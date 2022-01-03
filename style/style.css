@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.85);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 950px;
+    margin: 0 auto;
+}
+
+/* Cabecalho
+**************************************/
+header {
+    border-bottom: 1px solid #01CC7A;
+
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px; 
+}
+
+.logo3 {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+}
+
+.livramente {
+    width: 207px;
+    height: 108px;
+}
+
+/* Player
+******************************/
+.player {
+    display: flex;
+    justify-content: center;
+    margin: 60px auto;
+}
+
+/* Navegação
+*******************************/
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    list-style-type: none;
+}
+
+ul li {
+    display: flex;
+    align-items: center;   
+}
+
+ul a{
+    width: 293px;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+
+ul a img {
+    height: 36px;
+    width: 36px;
+    margin-left: 5px;
+
+}
+
+ul li a:hover {
+    box-shadow: 0 0 30px #01CC7A;
+}
+
+/* Texto
+****************************/
+
+main {
+    margin: 15px;
+    padding: 5px;
+}
+main p {
+    color: #FFFFFF;
+    text-align: center;
+    
+}
+
+/* Rodapé
+****************************/
+footer {
+    padding: 1px;
+    text-align: center;
+    background-color: #000;
+}
+
+footer p {
+    padding: 5px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+/* Responsividade
+**************************/
+@media (max-width: 600px) {
+    .container{
+        width: 100%;
+        align-items: center;
+    }
+
+    header {
+        border-bottom: none;
+    }
+
+    .cabecalho { 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 5px;
+
+    }
+
+    .player {
+        display: none;        
+    }
+    
+    main p {
+        text-align: center;
+        width: 100%;
+    }
+
+    footer {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        width: 100%;
+        align-items: center;
+    }
+    
+    header {
+        border-bottom: none;
+    }
+    .cabecalho { 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 5px;
+
+    }
+
+    .player {
+        display: none;        
+    }
+    footer {
+        margin: 0 auto;
+    }
+}
